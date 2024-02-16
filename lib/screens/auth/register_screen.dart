@@ -75,23 +75,31 @@ class _RegisterScreenState extends State<RegisterScreen> {
         key: _formKey,
         child: Center(
           child: SingleChildScrollView(
+
+
             child: Container(
               height: 900,
 
               decoration: const BoxDecoration(
-                color: Colors.lightBlue,
+                color: Colors.white,
 
-                // image: DecorationImage(
-                // image: AssetImage("assets/images/putali.jpeg"),
-                //   opacity: 0.2,
-                //   fit: BoxFit.cover,
-                // ),
+
               ),
               padding: EdgeInsets.all(20),
-              child: Column(
-                children: [
 
-                  SizedBox(height: 90,),
+              child: Column(
+
+                children: [ SizedBox(
+                  height: 3
+                ),
+                  Image.asset(
+                    "assets/images/L.png",
+                    height: 130,
+                    width: 700,
+                  ),
+                  SizedBox(
+                    height: 2,
+                  ),
                   TextFormField(
                     controller: _nameController,
                     validator: ValidateSignup.name,

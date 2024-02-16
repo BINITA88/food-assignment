@@ -81,10 +81,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   Image.asset(
                     "assets/images/L.png",
                     height: 300,
-                    width: 1000,
+                    width: 800,
                   ),
                   SizedBox(
-                    height: 5,
+                    height: 1,
                   ),
                   TextFormField(
                     controller: _emailController,
@@ -147,7 +147,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         },
                         child: Text(
                           "Forgot password?",
-                          style: TextStyle(color: Colors.grey.shade800),
+                          style: TextStyle(color: Colors.black,fontSize: 20),
                         ),
                       )),
                   SizedBox(

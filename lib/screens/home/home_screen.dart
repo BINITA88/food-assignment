@@ -132,13 +132,15 @@ class _HomeScreenState extends State<HomeScreen> {
             decoration: BoxDecoration(
 
               border: Border.all(
+
                 color: Colors.black26,
+
               ),
-              color: Colors. lightBlueAccent,
+              color: Colors. deepOrangeAccent,
               boxShadow: [
                 BoxShadow(
                   color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 8,
+                  spreadRadius: 15,
                   blurRadius: 15,
                   offset: Offset(0, 3), // changes position of shadow
                 ),
@@ -203,7 +205,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   alignment: Alignment.bottomCenter,
                   child: Container(
                       width: double.infinity,
-                      decoration: BoxDecoration(color: Colors.lightBlueAccent),
+                      decoration: BoxDecoration(color: Colors.deepOrangeAccent),
                       child: Text(
                         e.categoryName.toString() + "\n",
 
