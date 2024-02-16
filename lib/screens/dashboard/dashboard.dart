@@ -66,7 +66,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFf5f5f4),
+      backgroundColor: Colors.deepOrangeAccent,
       body: SafeArea(
         child: PageView(
           controller: pageController,

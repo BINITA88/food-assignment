@@ -50,11 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
       return Container(decoration: const BoxDecoration(
         borderRadius:BorderRadius.all(Radius.circular(30)),
 
-        image: DecorationImage(
-          image: AssetImage("assets/images/putali.jpeg"),
-          opacity: 0.1,
-          fit: BoxFit.cover,
-        ),
+
       ),
 
         child: Stack(
@@ -95,8 +91,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         Container(
                               margin: EdgeInsets.symmetric(horizontal: 10),
                             child: Text(
-                              "Products",
-                              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold,color: Colors.pink,),
+                              "Select Products from here",
+                              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold,color: Colors.black,),
                             )),
                         Container(
                             color: Colors.green,
@@ -132,13 +128,13 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Container(
 
             width: double.infinity,
-            height: 60,
+            height: 80,
             decoration: BoxDecoration(
 
               border: Border.all(
                 color: Colors.black26,
               ),
-              color: Colors.pink,
+              color: Colors. lightBlueAccent,
               boxShadow: [
                 BoxShadow(
                   color: Colors.grey.withOpacity(0.5),
@@ -150,15 +146,13 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             padding: EdgeInsets.all(15),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Expanded(child: Container()),
-                Expanded(child: Image.asset("assets/images/L.png", height: 70, width: 100,)),
-                Expanded(
-                    child: Align(
-                      alignment: Alignment.centerRight,
-                        child: Container()
-                        // Icon(Icons.search, size: 30,)
-                    )),
+
+
+                Image.asset("assets/images/L.png",fit: BoxFit.cover, ),
+
               ],
             )));
   }
@@ -172,13 +166,13 @@ class _HomeScreenState extends State<HomeScreen> {
             margin: EdgeInsets.symmetric(horizontal: 10),
             child: Text(
               "Welcome,",
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold,color: Colors.red),
+              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold,color: Colors.black),
             )),
         Container(
             margin: EdgeInsets.symmetric(horizontal: 10),
             child: Text(
               authVM.loggedInUser != null ? authVM.loggedInUser!.name.toString() : "Guest",
-              style: const TextStyle(fontSize: 30,color: Colors.green, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 30,color: Colors.black, fontWeight: FontWeight.bold),
             )),
       ],
     );
@@ -197,10 +191,10 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Stack(
             children: [
               ClipRRect(
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(10),
                   child: Image.network(
                     e.imageUrl.toString(),
-                    height: 120,
+                    height: 150,
                     width: double.infinity,
                     fit: BoxFit.cover,
                   )),
@@ -209,7 +203,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   alignment: Alignment.bottomCenter,
                   child: Container(
                       width: double.infinity,
-                      decoration: BoxDecoration(color: Colors.white70),
+                      decoration: BoxDecoration(color: Colors.lightBlueAccent),
                       child: Text(
                         e.categoryName.toString() + "\n",
 
