@@ -90,12 +90,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
               padding: EdgeInsets.all(20),
               child: Column(
                 children: [
-                  Image.asset(
-                    "assets/images/logo.jpeg",
-                    height: 100,
-                    width: 5000,
-                  ),
-                  SizedBox(height: 10,),
+
+                  SizedBox(height: 90,),
                   TextFormField(
                     controller: _nameController,
                     validator: ValidateSignup.name,

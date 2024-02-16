@@ -59,10 +59,12 @@ class _LoginScreenState extends State<LoginScreen> {
       key: _formKey,
       child: Scaffold(
         body: Center(
+
           child: SingleChildScrollView(
 
+
             child: Container(
-              height: 550,
+              height: 900,
 
               decoration: const BoxDecoration(
                 color: Colors.lightBlue,
@@ -74,16 +76,19 @@ class _LoginScreenState extends State<LoginScreen> {
                 // ),
               ),
               padding: EdgeInsets.all(20),
+
               child: Column(
 
-                children: [
+                children: [ SizedBox(
+                  height: 50,
+                ),
                   Image.asset(
                     "assets/images/logo.jpeg",
-                    height: 200,
-                    width: 300,
+                    height: 300,
+                    width: 1000,
                   ),
                   SizedBox(
-                    height: 10,
+                    height: 20,
                   ),
                   TextFormField(
                     controller: _emailController,
