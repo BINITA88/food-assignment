@@ -76,22 +76,24 @@ class _RegisterScreenState extends State<RegisterScreen> {
         child: Center(
           child: SingleChildScrollView(
             child: Container(
-              //background image with low opacity
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("assets/images/putali.jpeg"),
-                  opacity: 0.2,
-                  fit: BoxFit.cover,
-                ),
-              ),
+              height: 900,
 
+              decoration: const BoxDecoration(
+                color: Colors.lightBlue,
+
+                // image: DecorationImage(
+                // image: AssetImage("assets/images/putali.jpeg"),
+                //   opacity: 0.2,
+                //   fit: BoxFit.cover,
+                // ),
+              ),
               padding: EdgeInsets.all(20),
               child: Column(
                 children: [
                   Image.asset(
                     "assets/images/logo.jpeg",
-                    height: 150,
-                    width: 400,
+                    height: 100,
+                    width: 5000,
                   ),
                   SizedBox(height: 10,),
                   TextFormField(
@@ -318,7 +320,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         onTap: (){
                           Navigator.of(context).pop();
                         },
-                          child: const Text("Sign in", style: TextStyle(color: Colors.blue,fontSize: 14,fontWeight: FontWeight.bold),))
+                          child: const Text("Sign in", style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),))
                     ],
                   ),
 
