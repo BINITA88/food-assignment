@@ -97,9 +97,9 @@ class _AccountScreenState extends State<AccountScreen> {
         margin: EdgeInsets.symmetric(horizontal: 5),
         child: Card(
             elevation: 4,
-            color: Colors.white,
+            color: Colors.pink,
             child: ListTile(
-                tileColor: Colors.white,
+                tileColor: Colors.lightBlueAccent,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(0.5),
                 ),

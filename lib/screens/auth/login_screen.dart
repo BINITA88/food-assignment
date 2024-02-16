@@ -60,13 +60,18 @@ class _LoginScreenState extends State<LoginScreen> {
       child: Scaffold(
         body: Center(
           child: SingleChildScrollView(
+
             child: Container(
+              height: 550,
+
               decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("assets/images/putali.jpeg"),
-                  opacity: 0.2,
-                  fit: BoxFit.cover,
-                ),
+                color: Colors.lightBlue,
+
+                // image: DecorationImage(
+                  // image: AssetImage("assets/images/putali.jpeg"),
+                //   opacity: 0.2,
+                //   fit: BoxFit.cover,
+                // ),
               ),
               padding: EdgeInsets.all(20),
               child: Column(
@@ -161,7 +166,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         },
                         child: Text(
                           "Log In",
-                          style: TextStyle(fontSize: 20),
+                          style: TextStyle(fontSize: 20,color:Colors.black ),
                         )),
                   ),
                   SizedBox(
@@ -172,7 +177,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     children: [
                       Text(
                         "Are you new? Create an account ",
-                        style: TextStyle(color: Colors.grey.shade800),
+                        style: TextStyle(color: Colors.grey.shade800,fontSize: 15),
                       ),
                       InkWell(
                           onTap: () {
@@ -180,7 +185,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           },
                           child: const Text(
                             "Sign up",
-                            style: TextStyle(color: Colors.blue,fontWeight: FontWeight.bold,fontSize: 14),
+                            style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 20),
                           ))
                     ],
                   ),
