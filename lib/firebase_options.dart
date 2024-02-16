@@ -17,7 +17,10 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -46,31 +49,20 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyB14PCuchPwSZ6YJYteDS4euaFnR0Zeb_w',
-    appId: '1:938351542884:web:647941afcd8cbee6dd9571',
-    messagingSenderId: '938351542884',
-    projectId: 'fashion-store-956c8',
-    authDomain: 'fashion-store-956c8.firebaseapp.com',
-    storageBucket: 'fashion-store-956c8.appspot.com',
-    measurementId: 'G-REJZY2RC1S',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDDthlZZRMP-EKvln-EdCrZ6rZZGEZgTr0',
-    appId: '1:938351542884:android:df8e46ac5cac06acdd9571',
-    messagingSenderId: '938351542884',
-    projectId: 'fashion-store-956c8',
-    storageBucket: 'fashion-store-956c8.appspot.com',
+    apiKey: 'AIzaSyB48MA-n4HqU0vh74K7fHoGVry_BDqulGU',
+    appId: '1:537904633166:android:fa2b61922193b34a693a1f',
+    messagingSenderId: '537904633166',
+    projectId: 'foods-app-2f195',
+    storageBucket: 'foods-app-2f195.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCIlwV6_Himk5mgNc6NZ1awh-NXeTEPXHw',
-    appId: '1:938351542884:ios:3be2873b96b26ededd9571',
-    messagingSenderId: '938351542884',
-    projectId: 'fashion-store-956c8',
-    storageBucket: 'fashion-store-956c8.appspot.com',
-    iosClientId: '938351542884-dhoj6hdu8h3g15oqv3o4sb0c3512ri0n.apps.googleusercontent.com',
+    apiKey: 'AIzaSyBwhjtNa77xkA3-gym6vwT7rVoISPcnh4g',
+    appId: '1:537904633166:ios:3705304d28ba962c693a1f',
+    messagingSenderId: '537904633166',
+    projectId: 'foods-app-2f195',
+    storageBucket: 'foods-app-2f195.appspot.com',
     iosBundleId: 'com.example.nBaz',
   );
 }

@@ -48,6 +48,8 @@ class _HomeScreenState extends State<HomeScreen> {
     return Consumer3<CategoryViewModel, AuthViewModel, ProductViewModel>(
         builder: (context, categoryVM, authVM, productVM, child) {
       return Container(decoration: const BoxDecoration(
+        borderRadius:BorderRadius.all(Radius.circular(30)),
+
         image: DecorationImage(
           image: AssetImage("assets/images/putali.jpeg"),
           opacity: 0.1,
@@ -69,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                         Image.asset(
                           "assets/images/banner.jpg",
-                          height: 200,
+                          height: 300,
                                                     width: double.infinity,
                           fit: BoxFit.fill,
                         ),
@@ -94,9 +96,10 @@ class _HomeScreenState extends State<HomeScreen> {
                               margin: EdgeInsets.symmetric(horizontal: 10),
                             child: Text(
                               "Products",
-                              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold,color: Colors.pink,),
                             )),
                         Container(
+                            color: Colors.green,
                           margin: EdgeInsets.symmetric(horizontal: 10),
                           child: GridView.count(
                             crossAxisSpacing: 10,
@@ -127,18 +130,20 @@ class _HomeScreenState extends State<HomeScreen> {
     return Align(
         alignment: Alignment.topCenter,
         child: Container(
+
             width: double.infinity,
             height: 60,
             decoration: BoxDecoration(
+
               border: Border.all(
                 color: Colors.black26,
               ),
-              color: Colors.white,
+              color: Colors.pink,
               boxShadow: [
                 BoxShadow(
                   color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 2,
-                  blurRadius: 7,
+                  spreadRadius: 8,
+                  blurRadius: 15,
                   offset: Offset(0, 3), // changes position of shadow
                 ),
               ],
@@ -147,7 +152,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Row(
               children: [
                 Expanded(child: Container()),
-                Expanded(child: Image.asset("assets/images/logo.jpeg", height: 70, width: 70,)),
+                Expanded(child: Image.asset("assets/images/L.png", height: 70, width: 100,)),
                 Expanded(
                     child: Align(
                       alignment: Alignment.centerRight,
@@ -167,7 +172,7 @@ class _HomeScreenState extends State<HomeScreen> {
             margin: EdgeInsets.symmetric(horizontal: 10),
             child: Text(
               "Welcome,",
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold,color: Colors.red),
             )),
         Container(
             margin: EdgeInsets.symmetric(horizontal: 10),
