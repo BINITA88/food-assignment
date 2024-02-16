@@ -48,12 +48,12 @@ class _AccountScreenState extends State<AccountScreen> {
             height: 10,
           ),
           Image.asset(
-            "assets/images/logo.jpeg",
-            height: 100,
-            width: 100,
+            "assets/images/L.png",
+            height: 250,
+            width: 500,
           ),
           SizedBox(
-            height: 10,
+            height: 1,
           ),
           Container(
             child: Text(_auth.loggedInUser!.email.toString(), style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold,color: Colors.green),),
@@ -99,7 +99,7 @@ class _AccountScreenState extends State<AccountScreen> {
             elevation: 4,
             color: Colors.pink,
             child: ListTile(
-                tileColor: Colors.lightBlueAccent,
+                tileColor: Colors.white,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(0.5),
                 ),

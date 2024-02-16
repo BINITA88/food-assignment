@@ -159,8 +159,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         style: ButtonStyle(
                           shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20), side: BorderSide(color: Colors.blue))),
                           padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(vertical: 20)),
-                          backgroundColor: MaterialStateProperty.all<Color>(Color(
-                              0xffc75252)),
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.deepOrangeAccent),
                         ),
                         onPressed: () {
                           login();

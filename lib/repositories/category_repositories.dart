@@ -43,7 +43,7 @@ class CategoryRepository{
 
   List<CategoryModel> makeCategory(){
       return [
-        CategoryModel(categoryName: "amaryllis", status: "active", imageUrl: "https://florgeous.com/wp-content/uploads/2019/09/amaryllis-plant.jpg"),
+        CategoryModel(categoryName: "Donot", status: "active", imageUrl: "https://images.app.goo.gl/h449Jv3RwRufN5cV6.png"),
         CategoryModel(categoryName: "Aconite", status: "active", imageUrl: "https://www.flowerglossary.com/wp-content/uploads/2017/09/aconite.jpg"),
         CategoryModel(categoryName: "Geum", status: "active", imageUrl: "https://www.flowerglossary.com/wp-content/uploads/2017/09/geum.jpg"),
         CategoryModel(categoryName: "Rose", status: "active", imageUrl: "https://www.flowerglossary.com/wp-content/uploads/2017/09/rose.jpg"),
