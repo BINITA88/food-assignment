@@ -67,7 +67,7 @@ class _LoginScreenState extends State<LoginScreen> {
               height: 900,
 
               decoration: const BoxDecoration(
-                color: Colors.lightBlue,
+                color: Colors.white,
 
 
               ),
@@ -79,12 +79,12 @@ class _LoginScreenState extends State<LoginScreen> {
                   height: 50,
                 ),
                   Image.asset(
-                    "assets/images/logo.jpeg",
+                    "assets/images/L.png",
                     height: 300,
                     width: 1000,
                   ),
                   SizedBox(
-                    height: 20,
+                    height: 5,
                   ),
                   TextFormField(
                     controller: _emailController,
