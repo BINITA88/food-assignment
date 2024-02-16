@@ -46,16 +46,27 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
         body: Center(
           child: SingleChildScrollView(
             child: Container(
-              padding: const EdgeInsets.all(20),
+              height: 900,
+
+              decoration: const BoxDecoration(
+                color: Colors.lightBlue,
+
+
+              ),
+              padding: EdgeInsets.all(20),
+
               child: Column(
-                children: [
+
+                children: [ SizedBox(
+                  height: 50,
+                ),
                   Image.asset(
                     "assets/images/logo.jpeg",
-                    height: 100,
-                    width: 100,
+                    height: 300,
+                    width: 1000,
                   ),
-                  const SizedBox(
-                    height: 10,
+                  SizedBox(
+                    height: 30,
                   ),
                   TextFormField(
                     controller: _emailController,
@@ -80,16 +91,20 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
+
                         style: ButtonStyle(
+
                           shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20), side: BorderSide(color: Colors.blue))),
                           padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(vertical: 20)),
+                          backgroundColor: MaterialStateProperty.all<Color>(Color(
+                              0xffc75252)),
                         ),
                         onPressed: () {
                           resetPassword();
                         },
                         child: Text(
                           "Reset Password",
-                          style: TextStyle(fontSize: 20),
+                          style: TextStyle(fontSize: 20,color: Colors.black,),
                         )),
                   ),
                   SizedBox(
@@ -100,7 +115,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
                     children: [
                       Text(
                         "Already know the password? ",
-                        style: TextStyle(color: Colors.grey.shade800),
+                        style: TextStyle(color: Colors.grey.shade800,fontSize: 18),
                       ),
                       InkWell(
                           onTap: () {
@@ -108,7 +123,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
                           },
                           child: Text(
                             "Sign In",
-                            style: TextStyle(color: Colors.blue),
+                            style: TextStyle(color: Colors.black,fontSize: 20),
                           ))
                     ],
                   ),

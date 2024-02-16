@@ -69,11 +69,7 @@ class _LoginScreenState extends State<LoginScreen> {
               decoration: const BoxDecoration(
                 color: Colors.lightBlue,
 
-                // image: DecorationImage(
-                  // image: AssetImage("assets/images/putali.jpeg"),
-                //   opacity: 0.2,
-                //   fit: BoxFit.cover,
-                // ),
+
               ),
               padding: EdgeInsets.all(20),
 
