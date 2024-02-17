@@ -43,11 +43,11 @@ class CategoryRepository{
 
   List<CategoryModel> makeCategory(){
       return [
-        CategoryModel(categoryName: "Donot", status: "active", imageUrl: "https://images.app.goo.gl/h449Jv3RwRufN5cV6.png"),
-        CategoryModel(categoryName: "Aconite", status: "active", imageUrl: "https://www.flowerglossary.com/wp-content/uploads/2017/09/aconite.jpg"),
-        CategoryModel(categoryName: "Geum", status: "active", imageUrl: "https://www.flowerglossary.com/wp-content/uploads/2017/09/geum.jpg"),
-        CategoryModel(categoryName: "Rose", status: "active", imageUrl: "https://www.flowerglossary.com/wp-content/uploads/2017/09/rose.jpg"),
-        CategoryModel(categoryName: "SunFlower", status: "active", imageUrl: "https://www.flowerglossary.com/wp-content/uploads/2017/09/sunflower.jpg"),
+        CategoryModel(categoryName: "Pasta", status: "active", imageUrl: "https://img.freepik.com/free-photo/pasta-with-zucchini-sweet-peppers-with-basil-garlic-dressing_2829-17952.jpg?w=996&t=st=1708190635~exp=1708191235~hmac=07ab649cbd63bfa1159f0bd1c0a349c29d776c148d807abff00a35269fe80fd6"),
+        CategoryModel(categoryName: "Momo", status: "active", imageUrl: "https://images.pexels.com/photos/955137/pexels-photo-955137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
+        CategoryModel(categoryName: "Pizza", status: "active", imageUrl: "https://images.pexels.com/photos/845811/pexels-photo-845811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
+        CategoryModel(categoryName: "Burger", status: "active", imageUrl: "https://images.pexels.com/photos/918581/pexels-photo-918581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
+        CategoryModel(categoryName: "French fry", status: "active", imageUrl: "https://images.pexels.com/photos/3228803/pexels-photo-3228803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
       ];
   }
 
