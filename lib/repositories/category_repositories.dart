@@ -47,7 +47,7 @@ class CategoryRepository{
         CategoryModel(categoryName: "Momo", status: "active", imageUrl: "https://images.pexels.com/photos/955137/pexels-photo-955137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
         CategoryModel(categoryName: "Pizza", status: "active", imageUrl: "https://images.pexels.com/photos/845811/pexels-photo-845811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
         CategoryModel(categoryName: "Burger", status: "active", imageUrl: "https://images.pexels.com/photos/918581/pexels-photo-918581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
-        CategoryModel(categoryName: "French fry", status: "active", imageUrl: "https://images.pexels.com/photos/3228803/pexels-photo-3228803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
+        CategoryModel(categoryName: "Sweet", status: "active", imageUrl: "https://images.pexels.com/photos/808941/pexels-photo-808941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1ssss"),
       ];
   }
 

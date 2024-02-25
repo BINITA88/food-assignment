@@ -85,12 +85,12 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                         ),
 
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         Container(
                               margin: EdgeInsets.symmetric(horizontal: 10),
-                            child: Text(
+                            child: const Text(
                               "Select Products from here",
                               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold,color: Colors.black,),
                             )),
