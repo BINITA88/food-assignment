@@ -121,7 +121,7 @@ class _CartScreenState extends State<CartScreen> {
                                     onPressed: () {
                                       CartRepository().removeItemFromCart(e.product).then((value) {
                                         ScaffoldMessenger.of(context)
-                                            .showSnackBar(SnackBar(content: Text("Cart updated")));
+                                            .showSnackBar(SnackBar(content: Text("Cart Updated")));
                                         getCartItems();
                                       });
                                     },
